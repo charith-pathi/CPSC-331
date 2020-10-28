@@ -3,11 +3,8 @@ CPSC 331: Fall 2020 (Dr. Wayne Eberly)
 Assignment 1 - Question #12.
 
 Reid Erb - 10089638
-
 Matthew Newton - 30094756
-
 Charith Pathirathna - 10162790
-
 */
 
 package cpsc331.assignment1;
@@ -70,32 +67,31 @@ public class Routes2	{
 
 			while (i <= n)	{
 
-				/*
-				Loop Invariant for Outer Loop:
-				I.   n and m are integer inputs such that n >= 1 and m >= 1.
-	            II.  R is a (variable) ((n+1) x (m+1)) array of integers.
-	            III. i is an integer variable such that 0 <= i <= n+1.
-	            IV.  R [k][l] = Routes(k, l) for all integers k and l 
-	            	 such that 0 <= k <= i -1 and 0 <= l <= m.
+			/*
+			Loop Invariant for Outer Loop:
+			I.   n and m are integer inputs such that n >= 1 and m >= 1.
+	            	II.  R is a (variable) ((n+1) x (m+1)) array of integers.
+	            	III. i is an integer variable such that 0 <= i <= n+1.
+	            	IV.  R [k][l] = Routes(k, l) for all integers k and l 
+	            		such that 0 <= k <= i -1 and 0 <= l <= m.
 
-				Bound Function: n - i + 1.
-				*/
-
+			Bound Function: n - i + 1.
+			*/
 				int j = 0;
 
 				while (j <= m)	{
 
-					/*
-					Loop Invariant for Outer Loop:
-					I.   n and m are integer inputs such that n >= 1 and m >= 1.
-	            	II.  R is a (variable) ((n+1) x (m+1)) array of integers.
-	            	III. i is an integer variable such that 0 <= i <= n.
-	            	IV.  i is an integer variable such that 0 <= j <= m+1.
-	            	V.   R [k][l] = Routes(k, l) for all integers k and l such 
-	            		 that 0 <= k <= i and 0 <= l <= j-1.
+				/*
+				Loop Invariant for Outer Loop:
+				I.   n and m are integer inputs such that n >= 1 and m >= 1.
+	            		II.  R is a (variable) ((n+1) x (m+1)) array of integers.
+	            		III. i is an integer variable such that 0 <= i <= n.
+	            		IV.  i is an integer variable such that 0 <= j <= m+1.
+	            		V.   R [k][l] = Routes(k, l) for all integers k and l such 
+	            			that 0 <= k <= i and 0 <= l <= j-1.
 
-					Bound Function: m - j + 1.
-					*/
+				Bound Function: m - j + 1.
+				*/
 
 					if ((i == 0) || (j == 0))	{
 
@@ -121,9 +117,9 @@ public class Routes2	{
      	1. n and m are integer inputs.
      	2. If n or m is negative, then an IllegalArgumentException has been thrown.
      	3. If n or m is zero, then the number of valid steps that can be taken from 
-     			Routes2(0,m) = Routes2(n,0) = Routes2(0,0) = 1.
-		4. If n >= 1 and m >= 1, then an integer array with length 2 whose first
-			and second elements are the values F(n) and F(m) has been returned as
-			output.
+     		Routes2(0,m) = Routes2(n,0) = Routes2(0,0) = 1.
+	4. If n >= 1 and m >= 1, then an integer array with length 2 whose first
+		and second elements are the values F(n) and F(m) has been returned as
+		output.
      	*/ 
 }
