@@ -3,11 +3,8 @@ CPSC 331: Fall 2020 (Dr. Wayne Eberly)
 Assignment 1 - Question #3.
 
 Reid Erb - 10089638
-
 Matthew Newton - 30094756
-
 Charith Pathirathna - 10162790
-
 */
 
 package cpsc331.assignment1;
