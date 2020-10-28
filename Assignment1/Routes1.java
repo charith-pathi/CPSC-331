@@ -67,13 +67,13 @@ public class Routes1 {
 			return count(n-1, m).add(count(n, m-1));
 		}
 
-		/* Assertion:
+	/* Assertion:
      	1. n and m are integer inputs.
      	2. If n or m is negative, then an IllegalArgumentException has been thrown.
      	3. If n or m is zero, then the number of valid steps that can be taken from 
      			Routes1(0,m) = Routes1(n,0) = Routes1(0,0) = 1.
-		4. If n >= 1 and m >= 1, then the value of count(n-1,m).add(count(n,m-1)) is 
-			   returned as output.
+	4. If n >= 1 and m >= 1, then the value of count(n-1,m).add(count(n,m-1)) is 
+			returned as output.
      	*/ 
 	}
 }
